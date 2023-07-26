@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.views.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvHeightMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/tag_height"
+            />
+
+        <TextView
+            android:id="@+id/tvHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvHeightMessage"
+            />
+
+        <TextView
+            android:id="@+id/tvMassMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/tag_Mass"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeightMessage"/>
+
+        <TextView
+            android:id="@+id/tvMass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            app:layout_constraintStart_toEndOf="@+id/tvMassMessage"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeightMessage" />
+
+        <TextView
+            android:id="@+id/tvGenderMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/tag_Gender"
+            app:layout_constraintTop_toBottomOf="@+id/tvMassMessage"/>
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            app:layout_constraintStart_toEndOf="@+id/tvGenderMessage"
+            app:layout_constraintTop_toBottomOf="@+id/tvMassMessage" />
+
+        <TextView
+            android:id="@+id/tvSpeciesMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/tag_species"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvGenderMessage"/>
+
+        <TextView
+            android:id="@+id/tvSpecies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            app:layout_constraintStart_toEndOf="@+id/tvSpeciesMessage"
+            app:layout_constraintTop_toBottomOf="@+id/tvGenderMessage" />
+
+        <TextView
+            android:id="@+id/tvWikiMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/tag_wiki"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSpeciesMessage" />
+
+        <TextView
+            android:id="@+id/tvWiki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            app:layout_constraintStart_toEndOf="@+id/tvWikiMessage"
+            app:layout_constraintTop_toBottomOf="@+id/tvSpeciesMessage" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>
